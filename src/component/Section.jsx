@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 // import system from '../img/elitecraft.png';
 import system from '../img/header.jpg';
 import { MdEmail } from "react-icons/md";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+// import { IoMenu } from "react-icons/io5";
+import { RiMenuUnfold2Fill } from "react-icons/ri";
+// import { IoClose } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 import { IoHomeSharp } from "react-icons/io5";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
@@ -35,11 +37,11 @@ const Section = () => {
         <p> Elitecrafttech@gmail.com</p>
         </div>
         <h1 className='bg-[hsla(51,100%,50%,1)] py-[20px] px-[30px] text-[25px] hidden md:flex'><MdEmail /></h1>
-        <button onClick={Dropmenu} className='md:hidden text-[30px] text-[hsla(51,100%,50%,1)] fixed right-0 bg-[#0D0F1B]'><IoMenu /></button>
+        <button onClick={Dropmenu} className='md:hidden text-[30px] text-[hsla(51,100%,50%,1)] fixed right-0 bg-[#0D0F1B]'><RiMenuUnfold2Fill /></button>
     </div>
     {dropmenu&&
     <div className="bg-[#151931] text-white w-[250px] h-[100%] fixed z-[1] top-0 right-0 flex flex-col ">
-      <button onClick={Dropmenu} className='text-[55px] text-[hsla(51,100%,50%,1)] self-end'><IoClose /></button>
+      <button onClick={Dropmenu} className='text-[55px] text-[hsla(51,100%,50%,1)] self-end'><IoMdClose /></button>
 
       <ul className='flex flex-col gap-[25px] p-[30px] text-[22px]'>
         <a href="value" className='flex gap-[20px] items-center'>
