@@ -1,12 +1,11 @@
 import React from 'react';
 import pics from '../img/crafttech.jpeg';
-import { IoHomeSharp } from "react-icons/io5";
+import { MdAddHomeWork } from "react-icons/md";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { GrBlockQuote } from "react-icons/gr";
 import { GrContactInfo } from "react-icons/gr";
 import { RiServiceFill } from "react-icons/ri";
-// import {Link} from 'react-router-dom';
 
 
 
@@ -22,7 +21,7 @@ const menu = () => {
       </div>
         <ul className='flex flex-col gap-[20px] p-[30px]'>
           <a href="value" className='flex gap-[15px] items-center'>
-            <IoHomeSharp /> <li>Home</li>
+          <MdAddHomeWork /> <li>Home</li>
           </a>
           <a href="value" className='flex gap-[15px] items-center'>
             <MdOutlineContactSupport /> <li>Enquiry</li>

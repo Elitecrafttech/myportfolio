@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
-// import system from '../img/elitecraft.png';
 import system from '../img/header.jpg';
 import { MdEmail } from "react-icons/md";
-// import { IoMenu } from "react-icons/io5";
 import { RiMenuUnfold2Fill } from "react-icons/ri";
-// import { IoClose } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import { IoHomeSharp } from "react-icons/io5";
+import { MdAddHomeWork } from "react-icons/md";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { GrBlockQuote } from "react-icons/gr";
@@ -45,7 +42,7 @@ const Section = () => {
 
       <ul className='flex flex-col gap-[25px] p-[30px] text-[22px]'>
         <a href="value" className='flex gap-[20px] items-center'>
-          <IoHomeSharp /> <li>Home</li>
+          <MdAddHomeWork /> <li>Home</li>
         </a>
         <a href="value" className='flex gap-[20px] items-center'>
           <MdOutlineContactSupport /> <li>Enquiry</li>
