@@ -16,7 +16,7 @@ const Hero = () => {
     <div id='hero' className='anim w-full py-[100px] bg-[#FFFFFF]'>
       <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
         <div className='flex flex-col md:flex-row gap-[40px] items-center justify-center'>
-          <img src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
+          <img draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
           <div className='fadeInUp flex flex-col gap-[10px] p-[15px]'>
             <h1 className='font-bold text-[50px] md:text-[60px] text-[#D9DAE7]'>About Me</h1>
             <h2 className='elite text-[27px]'>Fullstack Developer</h2>

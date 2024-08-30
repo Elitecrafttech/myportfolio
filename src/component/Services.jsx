@@ -17,7 +17,7 @@ const Services = () => {
             </div>
             <div className='flex flex-wrap gap-[30px] items-center justify-center md:justify-around'>
                 <div className='web bg-[#FFFFFF] p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={globe} alt=""  className='rounded-full'/>
+                    <img draggable="false"  src={globe} alt=""  className='rounded-full'/>
                     <h1>Web design</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> Figma to Static(HTML/CSS) </li>
@@ -26,7 +26,7 @@ const Services = () => {
                     </ul>
                 </div>
                 <div className='web p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={gif} alt="" className='rounded-full'/>
+                    <img draggable="false" src={gif} alt="" className='rounded-full'/>
                     <h1>Website Development</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> “front-end” </li>
@@ -35,7 +35,7 @@ const Services = () => {
                     </ul>
                 </div>
                 <div className='web p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={py} alt="" className='rounded-full'/>
+                    <img draggable="false" src={py} alt="" className='rounded-full'/>
                     <h1>Python</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> GUI Development</li>
@@ -44,7 +44,7 @@ const Services = () => {
                     </ul>
                 </div>
                 <div className='web p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={mobile} alt="" className='rounded-xl'/>
+                    <img draggable="false" src={mobile} alt="" className='rounded-xl'/>
                     <h1>Mobile development</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> Hybrid applications </li>
@@ -53,7 +53,7 @@ const Services = () => {
                     </ul>
                 </div>
                 <div className='web p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={backend} alt="" className='rounded-full'/>
+                    <img draggable="false" src={backend} alt="" className='rounded-full'/>
                     <h1>Software Development</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> API development </li>
@@ -62,7 +62,7 @@ const Services = () => {
                     </ul>
                 </div>
                 <div className='web p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
-                    <img src={btc} alt="" className='rounded-full'/>
+                    <img draggable="false" src={btc} alt="" className='rounded-full'/>
                     <h1>Blockchain</h1>
                     <ul>
                         <li className='flex items-center gap-[10px]'> <IoIosArrowForward /> Public blockchain </li>
