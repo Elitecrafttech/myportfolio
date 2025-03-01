@@ -38,10 +38,10 @@ html {
     align-items: center;
     border-radius: 50%;
   }
-  .anim{
+  /* .anim{
     animation: myAnim 15s ease-in 3s 2 normal forwards;
-  }
-  @keyframes myAnim {
+  } */
+  /* @keyframes myAnim {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 0;
@@ -83,7 +83,7 @@ html {
 		animation-timing-function: ease-out;
 		transform: translateY(0);
 	}
-}
+} */
 .about{
    animation: customAni 19s ease-in-out 0s infinite normal forwards;
 }
@@ -134,15 +134,15 @@ html {
   }
   
 
-  .fadeInUp {
+  /* .fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
     -webkit-animation-duration: 1s;
     animation-duration: 7s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInUp {
+    } */
+    /* @-webkit-keyframes fadeInUp {
     0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
@@ -165,7 +165,7 @@ html {
     -webkit-transform: none;
     transform: none;
     }
-    } 
+    }  */
   
     .elite {
 		animation: focus-in-expand-top 5s linear 0s 1 normal none;
