@@ -135,7 +135,7 @@ const Section = () => {
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
          className='fadeInUp w-[80vw] md:w-[45vw]'>Crafting seamless user experiences from concept to deployment. I transform designs into dynamic, user-friendly interfaces, and bring ideas to life with efficient, scalable, and maintainable solutions."</div>
-        <a href="/resume.pdf" download="Resume.pdf"
+        <a href="/MyResumeCraftTech.pdf" download="MyResumeCraftTech.pdf"
         data-aos="zoom-out"
         data-aos-duration="3000"
          data-aos-delay="2000"
