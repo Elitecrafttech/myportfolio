@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import system from '../img/header.jpg';
+// import system from '../img/header.jpg';
+import system from '../img/elite.jpg';
 import { MdEmail } from "react-icons/md";
 import { RiMenuUnfold2Fill } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
@@ -26,7 +27,9 @@ const Section = () => {
     backgroundRepeat: 'no-repeat',
     backgroundColor: '#0D0F1B',
     backgroundPosition: 'left',
-    backgroundSize: '120%'
+    backgroundPositionX: '-130%',
+    backgroundSize: '105%',
+    // backgroundSize: '120%'
     }}
     >
 
@@ -38,7 +41,7 @@ const Section = () => {
          data-aos-delay="1000"
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
-         >+234 704 171 7579</p>
+         >+234 915 958 5211</p>
         <p 
         data-aos="zoom-out-down"
         data-aos-duration="3000"
