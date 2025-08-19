@@ -9,7 +9,7 @@ import globe from "../img/globe.gif";
 
 const Services = () => {
   return (
-    <div id='Services' className='anim w-full py-[100px] bg-[#FFFFFF]'>
+    <div id='Services' className=' w-full py-[100px] bg-[#FFFFFF]'>
         <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
             <div className='flex flex-col items-center justify-center'>
                 <h1 data-aos="fade-up" className='font-bold text-[40px] md:text-[45px] text-[#D9DAE7]'>My Services</h1>

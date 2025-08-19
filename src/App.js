@@ -8,6 +8,10 @@ import Hero from './component/Hero';
 import Resume from './component/Resume';
 import Services from './component/Services';
 import Hire from './component/Hire';
+import CraftSkills from './component/CraftSkills';
+import Contact from './component/Contact';
+import Project from './component/Project';
+
 function App() {
   React.useEffect(()=>{
     AOS.init({
@@ -25,7 +29,11 @@ function App() {
         <Hero/>
         <Resume/>
         <Services/>
-        <Hire/>
+        {/* <Hire/> */}
+        <CraftSkills />
+        <Project />
+        <Contact />
+
     </div>
   );
 }

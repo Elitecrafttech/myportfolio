@@ -23,13 +23,12 @@ const Section = () => {
 
   return (
     <div data-aos="fade-up"
-    className='w-[100%]  text-white ' style={{ background: `url(${system})`,
+    className='w-[100%]  text-white h-screen system' style={{ background: `url(${system})`,
     backgroundRepeat: 'no-repeat',
     backgroundColor: '#0D0F1B',
-    backgroundPosition: 'left',
-    backgroundPositionX: '-130%',
-    backgroundSize: '105%',
-    // backgroundSize: '120%'
+    backgroundPositionX: '170px',
+    backgroundPositionY: '46.6%',
+    backgroundSize: '100%',
     }}
     >
 
@@ -56,7 +55,7 @@ const Section = () => {
          data-aos-delay="1000"
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
-         className='bg-[hsla(51,100%,50%,1)] py-[20px] px-[30px] text-[25px] hidden md:flex'><MdEmail /></h1>
+         className='bg-[hsla(51,100%,50%,1)] py-[20px] px-[30px] rounded text-[25px] hidden md:flex hover:rounded-2xl'><MdEmail /></h1>
         <button onClick={Dropmenu} className='md:hidden text-[30px] text-[hsla(51,100%,50%,1)] fixed right-0 bg-[#0D0F1B]'><RiMenuUnfold2Fill /></button>
     </div>
     {dropmenu&&

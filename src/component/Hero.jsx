@@ -13,7 +13,7 @@ import { TbMoodNerd } from "react-icons/tb";
 
 const Hero = () => {
   return (
-    <div id='hero' className='anim w-full py-[100px] bg-[#FFFFFF]'>
+    <div id='hero' className=' w-full py-[100px] bg-[#FFFFFF]'>
       <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
         <div data-aos="fade-up" className='flex flex-col md:flex-row gap-[40px] items-center justify-center'>
           <img data-aos="fade-up" draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
