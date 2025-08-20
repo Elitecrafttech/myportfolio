@@ -1,5 +1,4 @@
 import { Mail, Globe, Phone, Send, MessageCircle, Star, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
-
 import {  SiGithub,  SiLinkedin,  SiInstagram,  SiFacebook } from 'react-icons/si';
 import { cn } from "../lib/utils"
 // import { useToast } from "@/hooks/use-toast";
@@ -97,7 +96,7 @@ const Contact = () => {
   return (
     <section
     id="contact" 
-      className="relative py-16 px-4 overflow-hidden bg-gray-950">
+      className="relative py-16 px-4 overflow-hidden bg-[#1c213b]">
        <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
           {/* Animated background elements - smaller */}
             <div className="absolute inset-0 overflow-hidden">

@@ -127,7 +127,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="relative min-h-screen flex items-start justify-center overflow-hidden bg-gray-950 px-4 py-8">
+      className="relative min-h-screen flex items-start justify-center overflow-hidden bg-[#1c213b] px-4 py-8">
         <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
             {/* Animated background elements - reduced size */}
             <div className="absolute inset-0 overflow-hidden">

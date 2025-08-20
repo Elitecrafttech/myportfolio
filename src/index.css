@@ -7,7 +7,7 @@ html {
 }
 
 .web {
-    background: linear-gradient(to right, #FACA22 50%, white 50%);
+    background: linear-gradient(to right, #FACA22 50%, #727484 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .7s ease-out;

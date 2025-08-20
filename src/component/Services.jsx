@@ -9,14 +9,14 @@ import globe from "../img/globe.gif";
 
 const Services = () => {
   return (
-    <div id='Services' className=' w-full py-[100px] bg-[#FFFFFF]'>
+    <div id='Services' className=' w-full py-[100px] bg-[#1c213b]'>
         <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
             <div className='flex flex-col items-center justify-center'>
-                <h1 data-aos="fade-up" className='font-bold text-[40px] md:text-[45px] text-[#D9DAE7]'>My Services</h1>
-                <p data-aos="fade-up" className='elite text-[30px] font-medium md:text-[38px] md:font-[350]'>A brief of Offering Services</p>
+                <h1 data-aos="fade-up" className='font-bold text-[40px] md:text-[45px] text-[#727484]'>My Services</h1>
+                <p data-aos="fade-up" className='elite text-[30px] font-medium md:text-[38px] md:font-[350] text-[#9fa1bb]'>A brief of Offering Services</p>
             </div>
             <div className='flex flex-wrap gap-[30px] items-center justify-center md:justify-around'>
-                <div className='web bg-[#FFFFFF] p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
+                <div className='web bg-[#727484] p-[30px] rounded-lg shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] w-[80vw] md:w-[22vw]'>
                     <img data-aos="fade-up" draggable="false"  src={globe} alt=""  className='rounded-full'/>
                     <h1 data-aos="fade-up">Web design</h1>
                     <ul>

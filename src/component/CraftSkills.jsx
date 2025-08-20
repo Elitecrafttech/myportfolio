@@ -76,7 +76,7 @@ const CraftSkills = () => {
   return (
     <section
         id='myCraft'
-        className='w-full relative py-16 px-4 overflow-hidden bg-gray-950'>
+        className='w-full relative py-16 px-4 overflow-hidden bg-[#1c213b]'>
         <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
 
             <div className=' absolute inset-0 overflow-hidden'>
