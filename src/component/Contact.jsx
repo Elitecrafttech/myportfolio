@@ -53,7 +53,7 @@ const Contact = () => {
         icon: Phone,
         title: "Phone",
         value: "+234 915 958 5211",
-        href: "tel:+234 915 958 5211",
+        href: "tel:+2349159585211",
         gradient: "from-blue-500 to-cyan-500"
         },
         {
@@ -69,25 +69,25 @@ const Contact = () => {
     const socialLinks = [
         { 
         icon: SiGithub, 
-        href: "https://github.com/sufyan2618", 
+        href: "https://github.com/elitecrafttech", 
         label: "GitHub", 
         color: "hover:text-white"
         },
         { 
         icon: SiLinkedin, 
-        href: "https://www.linkedin.com/in/sufyanliaqat2", 
+        href: "https://www.linkedin.com/in/elite-tech-427103231/", 
         label: "LinkedIn", 
         color: "hover:text-blue-400"
         },
         { 
         icon: SiInstagram, 
-        href: "https://www.instagram.com/sufyan_liaquat1/", 
+        href: "https://www.instagram.com/elitecrafttech/", 
         label: "Instagram", 
         color: "hover:text-pink-400"
         },
         { 
         icon: SiFacebook, 
-        href: "https://www.facebook.com/sufyan.liaquat.73", 
+        href: "https://www.facebook.com/elitecrafttech", 
         label: "Facebook", 
         color: "hover:text-blue-500"
         },

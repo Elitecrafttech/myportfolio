@@ -8,7 +8,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { TbWorldHeart } from "react-icons/tb";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd } from "react-icons/tb";
-import { Code, Database, Wrench, Sparkles, Star, Zap } from "lucide-react";
+import {  Star } from "lucide-react";
 
 
 

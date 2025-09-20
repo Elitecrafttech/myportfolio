@@ -29,7 +29,7 @@ function App() {
         <Resume/>
         <Services/>
         <CraftSkills />
-        <Project />
+        {/* <Project /> */}
         <Contact />
 
     </div>
