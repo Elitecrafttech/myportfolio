@@ -94,7 +94,16 @@ const Hero = () => {
           <div className='fadeInUp flex flex-col gap-[10px] p-[15px]'>
             <h1 data-aos="fade-up" className='font-bold text-[50px] md:text-[60px] text-[#727484]'>About Me</h1>
             <h2 data-aos="fade-up" className='elite text-[27px] text-[#9fa1bb]'>Fullstack Developer</h2>
-            <p data-aos="fade-up" className='w-[90vw] md:w-[40vw] text-[#9fa1bb]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nostrum vel fuga totam quibusdam, in corporis illum cum dolores sed quae placeat excepturi velit fugit doloribus quos libero repudiandae eius.lore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio odit sed ad. Excepturi, ipsam voluptates laborum in, sed quam doloribus nihil.</p>
+            <p data-aos="fade-up" className='w-[90vw] md:w-[40vw] text-[#9fa1bb]'>
+              I build more than just websites and apps—I craft digital 
+              experiences that solve real problems. 
+              From designing sleek user interfaces to architecting 
+              robust backend systems,Bring ui/ux to live coding
+               I thrive at the intersection 
+              of creativity and logic. I believe code isn’t just a tool; 
+              it’s a way to bring ideas to life, streamline workflows, 
+              and make technology feel effortless.
+            </p>
             <div className='flex flex-col lg:flex-row items-start lg:items-center gap-[20px]  md:gap-[50px]'>
               <div className='flex flex-col gap-[20px]'>
                 <p data-aos="fade-up" className='flex items-center gap-[15px] text-[#9fa1bb]'><span className='text-[hsla(51,100%,50%,1)]'><FaUserTie /></span>Elitecraft Tech</p>

@@ -27,9 +27,7 @@ function App() {
         <Section/>
         <Hero/>
         <CraftSkills />
-        <Resume/>
-        <Project />
-        <Services/>
+        {/* <Project /> */}
         <Contact />
 
     </div>
