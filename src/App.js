@@ -26,10 +26,10 @@ function App() {
         <Menu/>
         <Section/>
         <Hero/>
-        <Resume/>
-        <Services/>
         <CraftSkills />
+        <Resume/>
         <Project />
+        <Services/>
         <Contact />
 
     </div>

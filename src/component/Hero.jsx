@@ -8,7 +8,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { TbWorldHeart } from "react-icons/tb";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd } from "react-icons/tb";
-import { Code, Database, Wrench, Sparkles, Star, Zap } from "lucide-react";
+import {  Star } from "lucide-react";
 
 
 
@@ -88,7 +88,7 @@ const Hero = () => {
       </div>
 
 
-      <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
+      <div id='about' className='lg:ml-[220px] flex flex-col gap-[50px]'>
         <div data-aos="fade-up" className='flex flex-col md:flex-row gap-[40px] items-center justify-center'>
           <img data-aos="fade-up" draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
           <div className='fadeInUp flex flex-col gap-[10px] p-[15px]'>
