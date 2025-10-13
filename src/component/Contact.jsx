@@ -1,8 +1,11 @@
 import { Mail, Globe, Phone, Send, MessageCircle, Star, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import {  SiGithub,  SiLinkedin,  SiInstagram,  SiFacebook } from 'react-icons/si';
 import { cn } from "../lib/utils"
-// import { useToast } from "@/hooks/use-toast";
+// import { useToast } from "../hooks/toastify";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contact = () => {
     // const { toast } = useToast();
@@ -40,6 +43,53 @@ const Contact = () => {
     };
     }, []);
 
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+  
+    try {
+      const response = await fetch('https://formspree.io/f/xandrlwv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+
+        toast.success(
+            <div>
+                <strong>Message sent successfully!</strong>
+                <div>Thank you for reaching out. I'll get back to you within 24 hours.</div>
+            </div>
+        );
+
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+        toast.error(
+        <div>
+            <strong>Error sending message</strong>
+            <div>Please try again later.</div>
+        </div>
+        );
+
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+
 
     const contactInfo = [
         {
@@ -52,8 +102,8 @@ const Contact = () => {
         {
         icon: Phone,
         title: "Phone",
-        value: "+234 915 958 5211",
-        href: "tel:+2349159585211",
+        value: "+234 704 171 7579",
+        href: "tel:+2347041717579",
         gradient: "from-blue-500 to-cyan-500"
         },
         {
@@ -65,7 +115,6 @@ const Contact = () => {
         }
     ];
 
-    // Updated social links with Simple Icons
     const socialLinks = [
         { 
         icon: SiGithub, 
@@ -93,10 +142,13 @@ const Contact = () => {
         },
     ];
 
+
   return (
     <section
     id="contact" 
       className="relative py-16 px-4 overflow-hidden bg-[#1c213b]">
+        <ToastContainer position="top-center" autoClose={3000} />
+        
        <div className='lg:ml-[220px] flex flex-col gap-[50px]'>
           {/* Animated background elements - smaller */}
             <div className="absolute inset-0 overflow-hidden">
@@ -149,7 +201,7 @@ const Contact = () => {
                     <span className="text-purple-400 font-medium text-sm tracking-wider uppercase">Let's Connect</span>
                     <MessageCircle className="w-4 h-4 text-cyan-400 animate-pulse delay-1000" />
                 </div>
-                
+
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                     <span className="text-white">Get In</span>
                     <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent bg-300% animate-gradient"> Touch</span>
@@ -262,7 +314,7 @@ const Contact = () => {
                             </h3>
 
                             <form 
-                            // onSubmit={handleSubmit} 
+                            onSubmit={handleSubmit} 
                             className="space-y-4">
                             {/* Name Input - smaller */}
                             <div className="relative">
@@ -274,7 +326,7 @@ const Contact = () => {
                                 id="name"
                                 name="name"
                                 value={formData.name}
-                                // onChange={handleInputChange}
+                                onChange={handleInputChange}
                                 required
                                 className="w-full px-4 py-2.5 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400/50 focus:bg-gray-800/70 transition-all duration-300"
                                 placeholder="Enter your full name"
@@ -291,7 +343,7 @@ const Contact = () => {
                                 id="email"
                                 name="email"
                                 value={formData.email}
-                                // onChange={handleInputChange}
+                                onChange={handleInputChange}
                                 required
                                 className="w-full px-4 py-2.5 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-gray-800/70 transition-all duration-300"
                                 placeholder="your.email@example.com"
@@ -307,7 +359,7 @@ const Contact = () => {
                                 id="message"
                                 name="message"
                                 value={formData.message}
-                                // onChange={handleInputChange}
+                                onChange={handleInputChange}
                                 required
                                 rows={4}
                                 className="w-full px-4 py-2.5 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-400/50 focus:bg-gray-800/70 transition-all duration-300 resize-none"

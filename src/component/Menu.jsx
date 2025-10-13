@@ -41,7 +41,7 @@ const menu = () => {
            data-aos-delay="0"
            data-aos-easing="ease-in-out-sine"
            data-aos-mirror="true"
-           href="/#hero" className='flex gap-[15px] items-center'>
+           href="/" className='flex gap-[15px] items-center'>
           <MdAddHomeWork /> <li>Home</li>
           </a>
           <a
@@ -81,7 +81,7 @@ const menu = () => {
             data-aos-mirror="true"
              href="/#about" className='flex gap-[15px] items-center'><GrContactInfo /> <li>About</li></a>
           
-          <a
+          {/* <a
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="2500"
@@ -89,7 +89,7 @@ const menu = () => {
           data-aos-mirror="true"
            href="/#Services" className='flex gap-[15px] items-center'>
             <RiServiceFill /> <li>Services</li>
-          </a>
+          </a> */}
         </ul>
       </div>
         <p className='text-center'>{new Date().getFullYear()} &copy; Elitecrafttech</p>

@@ -58,7 +58,7 @@ const Section = () => {
          className='bg-[hsla(51,100%,50%,1)] py-[20px] px-[30px] rounded text-[25px] hidden md:flex hover:rounded-2xl'><MdEmail /></h1>
         <button onClick={Dropmenu} className='md:hidden text-[30px] text-[hsla(51,100%,50%,1)] fixed right-0 bg-[#0D0F1B]'><RiMenuUnfold2Fill /></button>
     </div>
-    {dropmenu&&
+    {dropmenu &&
     <div className="bg-[#151931] text-white w-[250px] h-[100%] fixed z-[1] top-0 right-0 flex flex-col ">
       <button onClick={Dropmenu} className='text-[55px] text-[hsla(51,100%,50%,1)] self-end'><IoMdClose /></button>
 
@@ -136,7 +136,7 @@ const Section = () => {
          data-aos-delay="1000"
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
-         className='fadeInUp w-[80vw] md:w-[45vw]'>Crafting seamless user experiences from concept to deployment. I transform designs into dynamic, user-friendly interfaces, and bring ideas to life with efficient, scalable, and maintainable solutions-."</div>
+         className='fadeInUp w-[80vw] md:w-[45vw]'>From concept to launch, I bring concepts to life through thoughtful code and creative engineering, I build products that feel effortless and perform flawlessly. I turn designs into interactive, creativity, and modern, From the first pixel to final deployment. I deliver solutions that balance aesthetics with technical precision.</div>
         <a href="/MyResumeCraftTech.pdf" download="MyResumeCraftTech.pdf"
         data-aos="zoom-out"
         data-aos-duration="3000"
@@ -152,7 +152,8 @@ const Section = () => {
         data-aos-delay="0"
         data-aos-easing="ease-in-out-sine"
         data-aos-mirror="true"
-         className='p-[5px] border-[1.3px] border-solid border-zinc-600 rounded-md hover:border-[hsla(51,100%,50%,1)] hover:rounded-full'><a href="value"><img src={fb} alt="" className='h-[20px]'/></a></div>
+         className='p-[5px] border-[1.3px] border-solid border-zinc-600 rounded-md hover:border-[hsla(51,100%,50%,1)] hover:rounded-full'><a href="https://www.facebook.com/elitecrafttech"><img src={fb} alt="facebook" className='h-[20px]'/></a>
+        </div>
         <div
         data-aos="fade-right"
         data-aos-duration="1000"

@@ -9,6 +9,8 @@ import { TbWorldHeart } from "react-icons/tb";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd } from "react-icons/tb";
 import {  Star } from "lucide-react";
+import { MdSystemUpdateAlt } from "react-icons/md";
+
 
 
 
@@ -103,6 +105,7 @@ const Hero = () => {
               of creativity and logic. I believe code isn’t just a tool; 
               it’s a way to bring ideas to life, streamline workflows, 
               and make technology feel effortless.
+              I build interfaces that not only look great but feel natural, intuitive, and built to last.
             </p>
             <div className='flex flex-col lg:flex-row items-start lg:items-center gap-[20px]  md:gap-[50px]'>
               <div className='flex flex-col gap-[20px]'>
@@ -116,33 +119,33 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-wrap md:items-center justify-center gap-[80px] md:gap-[20px] lg:gap-[85px]'>
+        <div className='flex flex-wrap md:items-center justify-center gap-[80px] md:gap-[20px] lg:gap-[60px]'>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className='text-[hsla(51,100%,50%,1)] text-[30px]'><FaCalendarAlt /></span>
             <div>
-              <h1 className='font-extrabold text-[25px]'>2550</h1>
+              <h1 className='font-extrabold text-[25px]'>24hrs</h1>
               <h2>Working Hours</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
-            <span className='text-[hsla(51,100%,50%,1)] text-[30px]'><TbWorldHeart /></span>
+            <span className='text-[hsla(51,100%,50%,1)] text-[30px]'><FcIdea /></span>
             <div>
-              <h1 className='font-extrabold text-[25px]'>550</h1>
-              <h2>Total projects</h2>
+              <h1 className='font-extrabold text-[25px]'>99.9%</h1>
+              <h2>System Uptime</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
-            <span className='text-[35px]'><FcIdea /></span>
+            <span className=' text-[hsla(51,100%,50%,1)] text-[35px]'><TbWorldHeart /></span>
             <div>
-              <h1 className='font-extrabold text-[25px]'>12</h1>
-              <h2>Years Journey</h2>
+              <h1 className='font-extrabold text-[25px]'>24/7</h1>
+              <h2>Active Support</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className='text-[hsla(51,100%,50%,1)] text-[45px]'><TbMoodNerd /></span>
             <div>
-              <h1 className='font-extrabold text-[25px]'>1500</h1>
-              <h2>Total Client</h2>
+              <h1 className='font-extrabold text-[25px]'>100%</h1>
+              <h2>Client Satisfaction</h2>
             </div>
           </div>
         </div>
