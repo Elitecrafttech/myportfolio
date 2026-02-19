@@ -9,7 +9,7 @@ import { TbWorldHeart } from "react-icons/tb";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd } from "react-icons/tb";
 import {  Star } from "lucide-react";
-import { MdSystemUpdateAlt } from "react-icons/md";
+// import { MdSystemUpdateAlt } from "react-icons/md";
 
 
 
@@ -20,6 +20,8 @@ const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(()=>{
+    if (!isVisible) return;
+
     const observer = new IntersectionObserver(
       ([entry])=>{
         if(entry.isIntersecting){
@@ -44,7 +46,7 @@ const Hero = () => {
 
 
   return (
-    <div id='hero' className=' w-full py-[100px] bg-[#1c213b]'>
+    <div id='hero' className=' w-full py-[100px] bg-[#1c213b]' >
 
       <div className=' absolute inset-0 overflow-hidden'>
         <div className='absolute w-80 h-80 opacity-15 blur-3xl animate-pulse'
