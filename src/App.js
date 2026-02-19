@@ -27,7 +27,7 @@ function App() {
         <Section/>
         <Hero/>
         <CraftSkills />
-        {/* <Project /> */}
+        <Project />
         <Contact />
 
     </div>

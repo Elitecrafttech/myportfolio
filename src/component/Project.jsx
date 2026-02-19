@@ -4,12 +4,23 @@ import { useState, useEffect, useRef } from "react";
 const projects = [
   {
     id: 1,
+    title: "Realtime Chat App",
+    description: "Create stunning Chatapp with realtime, a full-stack MERN application featuring user authentication, data caching, dynamic portfolio creation, and real-time updates.",
+    image: "/projects/realtime.png",
+    tags: ["MERN", "Redis", "Github Action", "Nginx", "Digital Ocean"],
+    demoUrl: "realtimechat-steel-three.vercel.app",
+    githubUrl: "https://github.com/Elitecrafttech/realtimechat.git",
+    featured: true,
+    category: "Full Stack / MERN Stack"
+  },
+  {
+    id: 2,
     title: "Online-Identity",
     description: "Create stunning portfolios with Online-Identity, a full-stack MERN application featuring user authentication, data caching, dynamic portfolio creation, and real-time updates.",
     image: "/projects/portfolio_creator.webp",
     tags: ["MERN", "Redis", "Github Action", "Nginx", "Digital Ocean"],
     demoUrl: "https://online-identity.tech",
-    githubUrl: "https://github.com/sufyan2618/portfolio_creator",
+    githubUrl: "https://github.com/Elitecrafttech/Online-Identity",
     featured: true,
     category: "Full Stack / Dev Ops"
   },
@@ -19,19 +30,19 @@ const projects = [
     description: "Voice-activated AI assistant web app built with MERN stack featuring natural speech interaction and real-time responses.",
     image: "/projects/assistant.webp",
     tags: ["React", "Node.js", "MongoDB", "Gemini AI", "Web Speech API"],
-    demoUrl: "https://novavoices.sufyanliaqat.me",
-    githubUrl: "https://github.com/sufyan2618/Nova-Voices",
+    // demoUrl: "https://novavoices.sufyanliaqat.me",
+    // githubUrl: "https://github.com/sufyan2618/Nova-Voices",
     featured: true,
     category: "AI / MERN Stack"
   },
   {
-    id: 2,
+    id: 4,
     title: "Devnity AI Code Editor",
     description: "AI-powered Code Editor built with React and Next.js, having Convex for database and Gemini AI for error correction ",
     image: "/projects/editor.webp",
     tags: ["React", "Next.js", "Tailwind CSS", "Convex", "Gemini AI"],
-    demoUrl: "https://devnity-livid.vercel.app/",
-    githubUrl: "https://github.com/sufyan2618/Devnity",
+    // demoUrl: "https://devnity-livid.vercel.app/",
+    // githubUrl: "https://github.com/sufyan2618/Devnity",
     featured: true,
     category: "AI / Web Development"
   },
@@ -41,42 +52,42 @@ const projects = [
     description: "Stunning dark-themed portfolio website with advanced animations, glassmorphism effects, and responsive design.",
     image: "/projects/portfolio.webp",
     tags: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://sufyanliaqat.me",
-    githubUrl: "https://github.com/sufyan2618/Portfolio",
+    // demoUrl: "https://sufyanliaqat.me",
+    // githubUrl: "https://github.com/sufyan2618/Portfolio",
     featured: true,
     category: "Frontend / Web Development"
   },
   {
-    id: 4,
+    id: 6,
     title: "Linkit: A Chat App",
     description: " Real-time chat application built with React, Node.js, and Socket.IO featuring user authentication, file sharing .",
     image: "/projects/chatapp.webp",
     tags: ["React", "Tailwind CSS", "Node.js", "Socket.IO", "Express"],
-    demoUrl: "https://chat-app-mv76.onrender.com",
-    githubUrl: "https://github.com/sufyan2618/Chat-App",
+    // demoUrl: "https://chat-app-mv76.onrender.com",
+    // githubUrl: "https://github.com/sufyan2618/Chat-App",
     featured: true,
     category: "Web Development"
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Wrap VPN",
     description: "Wrap VPN is a secure, cross-platform VPN app built with Flutter, featuring OVPN support, Supabase authentication, and a custom Android VPN engine.",
     image: "/projects/vpn.webp",
     tags: ["Flutter", "Dart", "Supabase", "OVPN", "Android", "iOS"],
-    demoUrl: "https://github.com/sufyan2618/vpn_app",
-    githubUrl: "https://github.com/sufyan2618/vpn_app",
+    // demoUrl: "https://github.com/sufyan2618/vpn_app",
+    // githubUrl: "https://github.com/sufyan2618/vpn_app",
     featured: true,
     category: "Cross-Platform App / Flutter"
   },
   {
-    id: 7,
+    id: 8,
     title: "E-commerce with AI Chatbot",
     description: "Full-featured e-commerce platform with user authentication, admin panel and a custom chatbot built with NLP.js.",
     image: "/projects/lals.webp",
     tags: ["React", "Node.js", "Express", "MongoDB", "NLP.js"],
-    demoUrl: "https://lals.sufyanliaqat.me",
-    githubUrl: "https://github.com/sufyan2618/Lals",
+    // demoUrl: "https://lals.sufyanliaqat.me",
+    // githubUrl: "https://github.com/sufyan2618/Lals",
     featured: true,
     category: "Full Stack / AI"
   },
@@ -352,6 +363,7 @@ const Project = () => {
 
             <div className={`text-center mt-12 mb-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <a
+                // href="https://github.com/sufyan2618"
                 href="https://github.com/sufyan2618"
                 target="_blank"
                 rel="noopener noreferrer"
