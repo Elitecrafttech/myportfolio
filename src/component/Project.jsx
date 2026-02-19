@@ -364,7 +364,7 @@ const Project = () => {
             <div className={`text-center mt-12 mb-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <a
                 // href="https://github.com/sufyan2618"
-                href="https://github.com/sufyan2618"
+                href="https://github.com/Elitecrafttech/elitecrafttechportfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold text-white text-sm overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25"
