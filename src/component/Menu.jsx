@@ -5,8 +5,6 @@ import { MdOutlineContactSupport } from "react-icons/md";
 import { GrProjects } from "react-icons/gr";
 import { GiStarsStack } from "react-icons/gi";
 import { GrContactInfo } from "react-icons/gr";
-import { RiServiceFill } from "react-icons/ri";
-
 
 
 
