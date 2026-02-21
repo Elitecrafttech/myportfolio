@@ -92,14 +92,14 @@ const Hero = () => {
         <div data-aos="fade-up" className='flex flex-col md:flex-row gap-[40px] items-center justify-center'>
           <img data-aos="fade-up" draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
           <div className='fadeInUp flex flex-col gap-[10px] p-[15px]'>
-            <h1 data-aos="fade-up" className='font-bold text-[50px] md:text-[60px] text-[#727484]'>About Me</h1>
-            <h2 data-aos="fade-up" className='elite text-[27px] text-[#9fa1bb]'>Fullstack Developer</h2>
-            <p data-aos="fade-up" className='w-[90vw] md:w-[40vw] text-[#9fa1bb]'>
-              I build more than just websites and apps—I craft digital 
+            <h1 data-aos="fade-up" className='font-bold text-[50px] md:text-[60px] text-[#e4e6f3]'>About Me</h1>
+            <h2 data-aos="fade-up" className='elite text-[27px] text-[#cdcfeb]'>Fullstack Developer</h2>
+            <p data-aos="fade-up" className='w-[90vw] md:w-[45vw] text-[#e4e6f3] text-[23px] py-[18px]' style={{ whiteSpace: 'pre-line' }}>
+              I build more than just websites and apps, I craft digital 
               experiences that solve real problems. 
               From designing sleek user interfaces to architecting 
-              robust backend systems,Bring ui/ux to live coding
-               I thrive at the intersection 
+              robust backend systems,Bring ui/ux to live coding {"\n"}
+              &nbsp;&nbsp;&nbsp;&nbsp;  I thrive at the intersection {"\n"}
               of creativity and logic. I believe code isn’t just a tool; 
               it’s a way to bring ideas to life, streamline workflows, 
               and make technology feel effortless.
@@ -107,12 +107,12 @@ const Hero = () => {
             </p>
             <div className='flex flex-col lg:flex-row items-start lg:items-center gap-[20px]  md:gap-[50px]'>
               <div className='flex flex-col gap-[20px]'>
-                <p data-aos="fade-up" className='flex items-center gap-[15px] text-[#9fa1bb]'><span className='text-[hsla(51,100%,50%,1)]'><FaUserTie /></span>Elitecraft Tech</p>
-                <p data-aos="fade-up" className='flex items-center gap-[15px] text-[#9fa1bb]'><span className='text-[hsla(51,100%,50%,1)]'><FaWhatsapp /></span>+234 704 171 7579</p>
+                <p data-aos="fade-up" className='flex items-center gap-[15px] text-[#cdcfeb]'><span className='text-[hsla(51,100%,50%,1)]'><FaUserTie /></span>Elitecraft Tech</p>
+                <p data-aos="fade-up" className='flex items-center gap-[15px] text-[#cdcfeb]'><span className='text-[hsla(51,100%,50%,1)]'><FaWhatsapp /></span>+234 704 171 7579</p>
               </div>
               <div className='flex flex-col gap-[20px]'>
-                <p data-aos="fade-up" className='flex items-center text-[#9fa1bb] gap-[15px]'><span className='text-[hsla(51,100%,50%,1)]'><FaTelegram /></span>@Elitecraft_tech</p>
-                <p data-aos="fade-up" className='flex items-center text-[#9fa1bb] gap-[15px]'><span className='text-[hsla(51,100%,50%,1)]'><MdOutlineMarkEmailRead /></span>Elitecrafttech@gmail.com</p>
+                <p data-aos="fade-up" className='flex items-center text-[#cdcfeb] gap-[15px]'><span className='text-[hsla(51,100%,50%,1)]'><FaTelegram /></span>@Elitecraft_tech</p>
+                <p data-aos="fade-up" className='flex items-center text-[#cdcfeb] gap-[15px]'><span className='text-[hsla(51,100%,50%,1)]'><MdOutlineMarkEmailRead /></span>Elitecrafttech@gmail.com</p>
               </div>
             </div>
           </div>
@@ -120,28 +120,28 @@ const Hero = () => {
         <div className='flex flex-wrap md:items-center justify-center gap-[80px] md:gap-[20px] lg:gap-[60px]'>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className='text-[hsla(51,100%,50%,1)] text-[30px]'><FaCalendarAlt /></span>
-            <div>
+            <div className='text-[#e4e6f3]'>
               <h1 className='font-extrabold text-[25px]'>24hrs</h1>
               <h2>Working Hours</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className='text-[hsla(51,100%,50%,1)] text-[30px]'><FcIdea /></span>
-            <div>
+            <div className='text-[#e4e6f3]'>
               <h1 className='font-extrabold text-[25px]'>99.9%</h1>
               <h2>System Uptime</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className=' text-[hsla(51,100%,50%,1)] text-[35px]'><TbWorldHeart /></span>
-            <div>
+            <div className='text-[#e4e6f3]'>
               <h1 className='font-extrabold text-[25px]'>24/7</h1>
               <h2>Active Support</h2>
             </div>
           </div>
           <div data-aos="fade-up" className='flex items-center gap-[20px] shadow-xl p-[60px] md:p-[20px] rounded-lg bg-[#727484]'>
             <span className='text-[hsla(51,100%,50%,1)] text-[45px]'><TbMoodNerd /></span>
-            <div>
+            <div className='text-[#e4e6f3]'>
               <h1 className='font-extrabold text-[25px]'>100%</h1>
               <h2>Client Satisfaction</h2>
             </div>

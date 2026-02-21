@@ -8,6 +8,7 @@ import Hero from './component/Hero';
 import CraftSkills from './component/CraftSkills';
 import Contact from './component/Contact';
 import Project from './component/Project';
+import Services from './component/Services';
 
 function App() {
   React.useEffect(()=>{
@@ -25,6 +26,7 @@ function App() {
         <Section/>
         <Hero/>
         <CraftSkills />
+        <Services />
         <Project />
         <Contact />
 

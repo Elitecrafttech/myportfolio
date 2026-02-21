@@ -33,61 +33,51 @@ const menu = () => {
       
 
         <ul className='flex flex-col gap-[20px] lg:gap-[10px] lg:px-[30px] lg:py-0 p-[30px]'>
-          <a
-           data-aos="fade-right"
-           data-aos-duration="1000"
-           data-aos-delay="0"
-           data-aos-easing="ease-in-out-sine"
-           data-aos-mirror="true"
-           href="/" className='flex gap-[15px] items-center'>
-          <MdAddHomeWork /> <li>Home</li>
-          </a>
-          <a
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-          data-aos-easing="ease-in-out-sine"
-          data-aos-mirror="true"
-           href="/#contact" className='flex gap-[15px] items-center'>
-            <MdOutlineContactSupport /> <li>Enquiry</li>
-          </a>
-          <a
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-          data-aos-easing="ease-in-out-sine"
-          data-aos-mirror="true"
-           href="/#projects" className='flex gap-[15px] items-center'>
-            <GrProjects /> <li>Project</li>
-          </a>
-
-          <a
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-          data-aos-easing="ease-in-out-sine"
-          data-aos-mirror="true"
-           href="/#myCraft" className='flex gap-[15px] items-center'>
-            <GiStarsStack  /> <li>Stack/Tool</li>
-          </a>
-         
-            <a
+        <li
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="2000"
+            data-aos-delay="0"
             data-aos-easing="ease-in-out-sine"
-            data-aos-mirror="true"
-             href="/#about" className='flex gap-[15px] items-center'><GrContactInfo /> <li>About</li></a>
-          
-          {/* <a
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="2500"
-          data-aos-easing="ease-in-out-sine"
-          data-aos-mirror="true"
-           href="/#Services" className='flex gap-[15px] items-center'>
-            <RiServiceFill /> <li>Services</li>
-          </a> */}
+            data-aos-mirror="true">
+              <a href="/" 
+              className='flex gap-[20px] items-center'><MdAddHomeWork /> Home</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true">
+              <a href="/#contact" 
+              className='flex gap-[20px] items-center'><MdOutlineContactSupport /> Enquiry</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true">
+              <a href="/#projects" 
+              className='flex gap-[20px] items-center'><GrProjects /> Project</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true">
+              <a href="/#myCraft" 
+              className='flex gap-[20px] items-center'><GiStarsStack /> Stack/Tool</a>
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="0"
+            data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="true">
+              <a href="/#about" 
+              className='flex gap-[20px] items-center'><GrContactInfo /> About</a>
+          </li>
         </ul>
       </div>
         <p className='text-center'>{new Date().getFullYear()} &copy; Elitecrafttech</p>
