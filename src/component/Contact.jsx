@@ -1,7 +1,6 @@
 import { Mail, Globe, Phone, Send, MessageCircle, Star, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import {  SiGithub,  SiLinkedin,  SiInstagram,  SiFacebook } from 'react-icons/si';
 import { cn } from "../lib/utils"
-// import { useToast } from "../hooks/toastify";
 import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -48,7 +47,7 @@ const Contact = () => {
     setIsSubmitting(true);
   
     try {
-      const response = await fetch('https://formspree.io/f/xandrlwv', {
+      const response = await fetch(process.env.REACT_APP_CONTACT_FORM, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

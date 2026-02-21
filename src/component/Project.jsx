@@ -5,18 +5,76 @@ const projects = [
   {
     id: 1,
     title: "Realtime Chat App",
-    description: "Create stunning Chatapp with realtime, a full-stack MERN application featuring user authentication, data caching, dynamic portfolio creation, and real-time updates.",
+    description: " Chatapp with realtime, Real-time chat application built with React, Node.js, and Socket.IO featuring user authentication, file sharing .",
     image: "/projects/realtime.png",
-    tags: ["MERN", "Redis", "Github Action", "Nginx", "Digital Ocean"],
-    demoUrl: "realtimechat-steel-three.vercel.app",
+    tags: ["React", "Tailwind CSS", "Node.js", "Socket.IO", "Express"],
+    demoUrl: "https://realtimechat-steel-three.vercel.app",
     githubUrl: "https://github.com/Elitecrafttech/realtimechat.git",
     featured: true,
-    category: "Full Stack / MERN Stack"
+    category: "Web Development Full Stack / MERN Stack"
   },
   {
     id: 2,
+    title: "E-commerce with AI Chatbot",
+    description: "Full-featured e-commerce platform with user authentication, admin panel and a custom chatbot built with NLP.js.",
+    access: "Request for access",
+    image: "/projects/lals.webp",
+    tags: ["React", "Node.js", "Express", "MongoDB", "NLP.js"],
+    githubUrl: "https://github.com/Elitecrafttech/ecomercewithchat",
+    featured: true,
+    category: "Full Stack / AI"
+  },
+
+  {
+    id: 3,
+    title: "Brahms Interior",
+    description: "Brahms Interior is a modern single-page application built with Next.js to showcase furniture and interior design services, featuring a clean business presentation, service highlights, and direct customer contact integration.",
+    image: "/projects/brahms.png",
+    tags: ["Next.js", "React", "Tailwind CSS"],
+    demoUrl: "https://brahmsinteriornext.vercel.app",
+    githubUrl: "https://github.com/Elitecrafttech/brahmsinteriornext.git",
+    featured: true,
+    category: "Web Development / Business Website"
+  },
+  {
+    id: 4,
+    title: "AI Voice Assistant",
+    description: "Voice-activated AI assistant web app built with MERN stack featuring natural speech interaction and real-time responses.",
+    access: "Request for access",
+    image: "/projects/assistant.webp",
+    tags: ["React", "Node.js", "MongoDB", "Gemini AI", "Web Speech API"],
+    githubUrl: "https://github.com/Elitecrafttech/novavoice",
+    featured: true,
+    category: "AI / MERN Stack"
+  },
+
+  {
+    id: 5,
+    title: "Wrap VPN",
+    description: "Wrap VPN is a secure, cross-platform VPN app built with Flutter, featuring OVPN support, Supabase authentication, and a custom Android VPN engine.",
+    access: "Request for access",
+    image: "/projects/vpn.webp",
+    tags: ["Flutter", "Dart", "Supabase", "OVPN", "Android", "iOS"],
+    githubUrl: "https://github.com/Elitecrafttech/vpn",
+    featured: true,
+    category: "Cross-Platform App / Flutter"
+  },
+  {
+    id: 6,
+    title: "URL Shortening App",
+    description: "URL Shortening App is a testing project built with HTML, CSS, and JavaScript that allows users to convert long URLs into shortened links by integrating and fetching data from the ShortURL-ovln API.",
+    image: "/projects/shorturl.png",
+    tags: ["HTML", "CSS", "JavaScript", "REST API", "Fetch API"],
+    demoUrl: "https://url-shortening-xi-seven.vercel.app",
+    githubUrl: "https://github.com/Elitecrafttech/URL-shortening",
+    featured: false,
+    category: "Frontend Development / API Integration"
+  },
+  {
+    id: 7,
     title: "Online-Identity",
     description: "Create stunning portfolios with Online-Identity, a full-stack MERN application featuring user authentication, data caching, dynamic portfolio creation, and real-time updates.",
+    access: "Request for access",
     image: "/projects/portfolio_creator.webp",
     tags: ["MERN", "Redis", "Github Action", "Nginx", "Digital Ocean"],
     demoUrl: "https://online-identity.tech",
@@ -24,73 +82,19 @@ const projects = [
     featured: true,
     category: "Full Stack / Dev Ops"
   },
-  {
-    id: 3,
-    title: "AI Voice Assistant",
-    description: "Voice-activated AI assistant web app built with MERN stack featuring natural speech interaction and real-time responses.",
-    image: "/projects/assistant.webp",
-    tags: ["React", "Node.js", "MongoDB", "Gemini AI", "Web Speech API"],
-    // demoUrl: "https://novavoices.sufyanliaqat.me",
-    // githubUrl: "https://github.com/sufyan2618/Nova-Voices",
-    featured: true,
-    category: "AI / MERN Stack"
-  },
-  {
-    id: 4,
-    title: "Devnity AI Code Editor",
-    description: "AI-powered Code Editor built with React and Next.js, having Convex for database and Gemini AI for error correction ",
-    image: "/projects/editor.webp",
-    tags: ["React", "Next.js", "Tailwind CSS", "Convex", "Gemini AI"],
-    // demoUrl: "https://devnity-livid.vercel.app/",
-    // githubUrl: "https://github.com/sufyan2618/Devnity",
-    featured: true,
-    category: "AI / Web Development"
-  },
-  {
-    id: 5,
-    title: "Modern Portfolio Website",
-    description: "Stunning dark-themed portfolio website with advanced animations, glassmorphism effects, and responsive design.",
-    image: "/projects/portfolio.webp",
-    tags: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    // demoUrl: "https://sufyanliaqat.me",
-    // githubUrl: "https://github.com/sufyan2618/Portfolio",
-    featured: true,
-    category: "Frontend / Web Development"
-  },
-  {
-    id: 6,
-    title: "Linkit: A Chat App",
-    description: " Real-time chat application built with React, Node.js, and Socket.IO featuring user authentication, file sharing .",
-    image: "/projects/chatapp.webp",
-    tags: ["React", "Tailwind CSS", "Node.js", "Socket.IO", "Express"],
-    // demoUrl: "https://chat-app-mv76.onrender.com",
-    // githubUrl: "https://github.com/sufyan2618/Chat-App",
-    featured: true,
-    category: "Web Development"
-  },
 
   {
-    id: 7,
-    title: "Wrap VPN",
-    description: "Wrap VPN is a secure, cross-platform VPN app built with Flutter, featuring OVPN support, Supabase authentication, and a custom Android VPN engine.",
-    image: "/projects/vpn.webp",
-    tags: ["Flutter", "Dart", "Supabase", "OVPN", "Android", "iOS"],
-    // demoUrl: "https://github.com/sufyan2618/vpn_app",
-    // githubUrl: "https://github.com/sufyan2618/vpn_app",
-    featured: true,
-    category: "Cross-Platform App / Flutter"
-  },
-  {
     id: 8,
-    title: "E-commerce with AI Chatbot",
-    description: "Full-featured e-commerce platform with user authentication, admin panel and a custom chatbot built with NLP.js.",
-    image: "/projects/lals.webp",
-    tags: ["React", "Node.js", "Express", "MongoDB", "NLP.js"],
-    // demoUrl: "https://lals.sufyanliaqat.me",
-    // githubUrl: "https://github.com/sufyan2618/Lals",
-    featured: true,
-    category: "Full Stack / AI"
+    title: "HealthPal",
+    description: "HealthPal is a testing project built with HTML, CSS, and JavaScript featuring a responsive landing page and a booking page where users submit their information through an external form endpoint for message delivery.",
+    image: "/projects/pal.png",
+    tags: ["HTML", "CSS", "JavaScript", "Forms Integration"],
+    demoUrl: "https://health-pal.vercel.app",
+    githubUrl: "https://github.com/Elitecrafttech/HealthPal",
+    featured: false,
+    category: "Frontend Development"
   },
+  
 ];
 
 const Project = () => {
@@ -328,21 +332,34 @@ const Project = () => {
                             ? `${project.description.substring(0, 120)}...`
                             : project.description}
                         </p>
+                        <a href="/#contact" className="text-base font-medium text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-purple-400 group-hover:to-cyan-400 transition-all duration-300">{project.access || ""}</a>
 
                         {/* Links - smaller spacing */}
                         <div className="flex justify-between items-center mt-4">
                         <div className="flex gap-2">
                             <a
-                            href={project.demoUrl}
-                            target="_blank"
+                            href={
+                              project.access === "Request for access"
+                                ? "/#contact"
+                                : project.demoUrl
+                            }
+                            target={
+                              project.access === "Request for access" ? "_self" : "_blank"
+                            }
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
                             >
                             <ExternalLink size={16} />
                             </a>
                             <a
-                            href={project.githubUrl}
-                            target="_blank"
+                            href={
+                                project.access === "Request for access"
+                                  ? "/#contact"
+                                  : project.githubUrl
+                              }
+                              target={
+                                project.access === "Request for access" ? "_self" : "_blank"
+                              }
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
                             >
@@ -364,7 +381,7 @@ const Project = () => {
             <div className={`text-center mt-12 mb-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <a
                 // href="https://github.com/sufyan2618"
-                href="https://github.com/Elitecrafttech/elitecrafttechportfolio"
+                href="https://github.com/Elitecrafttech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold text-white text-sm overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25"
