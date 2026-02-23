@@ -39,7 +39,7 @@ const BackgroundSwitcher = ({
           absolute inset-0 transition-all duration-1000 ease-in-out
           bg-no-repeat bg-cover
           sm:bg-center
-          bg-[position:-160px_46.6%]
+          bg-[position:-170px_46.6%]
           md:bg-[position:120px_46.6%]
           lg:bg-[position:170px_46.6%]
           ${isMobile ? (active === 0 ? "opacity-100" : "opacity-0") : "opacity-100"}
@@ -56,8 +56,8 @@ const BackgroundSwitcher = ({
           className={`
             absolute inset-0 transition-all duration-1000 ease-in-out
             bg-no-repeat
-            bg-[position:53%_60%]
-            md:bg-[position:50%_50%]
+            bg-[position:60%_49%]
+            md:bg-[position:53%_37%]
             lg:bg-cover
             lg:bg-[position:170px_46.6%]
             ${active === 1 ? "opacity-100" : "opacity-0"}
