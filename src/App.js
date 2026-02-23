@@ -7,7 +7,7 @@ import Section from './pages/Section';
 import Hero from './pages/Hero';
 import CraftSkills from './pages/CraftSkills';
 import Contact from './pages/Contact';
-import Project from './pages/Project';
+import Project from './pages/ProjectPage';
 import Services from './pages/Services';
 
 function App() {
