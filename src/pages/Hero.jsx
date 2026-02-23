@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import pics from '../img/img01.jpg';
+import myimg1 from '../img/myimg1.jpg';
+import myimg2 from '../img/myimg2.jpg';
 import { FaUserTie } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
@@ -9,6 +11,7 @@ import { TbWorldHeart } from "react-icons/tb";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd } from "react-icons/tb";
 import {  Star } from "lucide-react";
+import ImageSwitcher from '../component/ImageSwitcher';
 
 const Hero = () => {
 
@@ -90,7 +93,8 @@ const Hero = () => {
 
       <div id='about' className='lg:ml-[220px] flex flex-col gap-[50px]'>
         <div data-aos="fade-up" className='flex flex-col md:flex-row gap-[40px] items-center justify-center'>
-          <img data-aos="fade-up" draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/>
+          <ImageSwitcher images={[pics, myimg2, myimg1]}/>
+          {/* <img data-aos="fade-up" draggable="false" src={pics} alt="" className='about md:h-[400px] h-[330px] rounded-[20px]'/> */}
           <div className='fadeInUp flex flex-col gap-[10px] p-[15px]'>
             <h1 data-aos="fade-up" className='font-bold text-[50px] md:text-[60px] text-[#e4e6f3]'>About Me</h1>
             <h2 data-aos="fade-up" className='elite text-[27px] text-[#cdcfeb]'>Fullstack Developer</h2>

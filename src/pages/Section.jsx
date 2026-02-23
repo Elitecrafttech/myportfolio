@@ -1,5 +1,7 @@
 
-import React, { useState } from 'react';
+import React, { 
+  // useEffect,
+   useState } from 'react';
 import system from '../img/elite.jpg';
 import { MdEmail, MdAddHomeWork, MdOutlineContactSupport } from "react-icons/md";
 import { RiMenuUnfold2Fill, RiServiceFill } from "react-icons/ri";
@@ -9,22 +11,16 @@ import fb from '../img/fb.png';
 import insta from '../img/insta.png';
 import twitter from '../img/twitter.png';
 import linkdln from '../img/linkdln.png';
+import BackgroundSwitcher from '../component/BackgroundSwitcher';
 
 const Section = () => {
   const [dropmenu, setDropmenu] = useState(false);
 
+
   return (
     <div className="relative w-full h-screen overflow-visible text-white">
       {/* Background image */}
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: `url(${system})`,
-          backgroundColor: '#0D0F1B',
-          backgroundPositionX: '170px',
-          backgroundPositionY: '46.6%',
-        }}
-      />
+      <BackgroundSwitcher image={system} interval={5000}/>
 
       {/* Top contact + email section */}
       <div className="relative lg:ml-[220px] flex justify-between items-center p-[15px] md:p-0 z-20">

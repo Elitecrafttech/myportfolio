@@ -2,13 +2,13 @@ import React from 'react'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import './App.css';
-import Menu from './component/Menu';
-import Section from './component/Section';
-import Hero from './component/Hero';
-import CraftSkills from './component/CraftSkills';
-import Contact from './component/Contact';
-import Project from './component/Project';
-import Services from './component/Services';
+import Menu from './pages/Menu';
+import Section from './pages/Section';
+import Hero from './pages/Hero';
+import CraftSkills from './pages/CraftSkills';
+import Contact from './pages/Contact';
+import Project from './pages/Project';
+import Services from './pages/Services';
 
 function App() {
   React.useEffect(()=>{
@@ -21,14 +21,19 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <div className="">
+    <div cclassName="flex">
+      {/* Sidebar */}
         <Menu/>
+
+        <main className="flex-1">
         <Section/>
         <Hero/>
         <CraftSkills />
         <Services />
         <Project />
         <Contact />
+
+        </main>
 
     </div>
   );
