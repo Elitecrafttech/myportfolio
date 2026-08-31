@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from "react";
+import { usePrefersReducedMotion } from "../hooks/useMotion";
 
-const ImageSwitcher = ({ images, interval = 4000 }) => {
+const ImageSwitcher = ({ images, interval = 5000 }) => {
   const [active, setActive] = useState(0);
+  const reduced = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (!images || images.length === 0) return;
-
-    const timer = setInterval(() => {
+    if (!images || images.length === 0 || reduced) return undefined;
+    const timer = window.setInterval(() => {
       setActive((prev) => (prev + 1) % images.length);
     }, interval);
+    return () => window.clearInterval(timer);
+  }, [images, interval, reduced]);
 
-    return () => clearInterval(timer);
-  }, [images, interval]);
+  if (!images || images.length === 0) return null;
 
   return (
-    <div className="relative md:h-[400px] h-[330px] w-full max-w-[450px]">
+    <div className="about-portrait relative h-[280px] w-full sm:h-[340px] lg:h-[420px]">
       {images.map((img, index) => (
         <img
-          key={index}
+          key={img}
           src={img}
-          alt="profile"
+          alt={index === active ? "Portrait of the LitcraftIQ engineer" : ""}
           draggable="false"
-          className={`
-            absolute inset-0 w-full h-full object-cover rounded-[20px]
-            transition-opacity duration-1000 ease-in-out
-            ${active === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-          `}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+            active === index ? "opacity-100" : "opacity-0"
+          }`}
         />
       ))}
     </div>
