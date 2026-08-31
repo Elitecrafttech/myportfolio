@@ -1,33 +1,47 @@
 import React, { useEffect, useState } from "react";
-import { usePrefersReducedMotion } from "../hooks/useMotion";
+import { useDocumentHidden, usePrefersReducedMotion } from "../hooks/useMotion";
 
 const ImageSwitcher = ({ images, interval = 5000 }) => {
   const [active, setActive] = useState(0);
   const reduced = usePrefersReducedMotion();
+  const hidden = useDocumentHidden();
+  const count = images?.length ?? 0;
 
   useEffect(() => {
-    if (!images || images.length === 0 || reduced) return undefined;
+    if (count < 2 || reduced || hidden) return undefined;
     const timer = window.setInterval(() => {
-      setActive((prev) => (prev + 1) % images.length);
+      setActive((prev) => (prev + 1) % count);
     }, interval);
     return () => window.clearInterval(timer);
-  }, [images, interval, reduced]);
+  }, [count, interval, reduced, hidden]);
 
-  if (!images || images.length === 0) return null;
+  if (!images || count === 0) return null;
 
   return (
-    <div className="about-portrait relative h-[280px] w-full sm:h-[340px] lg:h-[420px]">
-      {images.map((img, index) => (
-        <img
-          key={img}
-          src={img}
-          alt={index === active ? "Portrait of the LitcraftIQ engineer" : ""}
-          draggable="false"
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
-            active === index ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
+    <div className="relative h-[280px] w-full overflow-hidden sm:h-[340px] lg:h-[420px]">
+      {images.map((img, index) => {
+        const isActive = active === index;
+        return (
+          <div
+            key={img}
+            className="about-portrait absolute inset-0"
+            style={{
+              opacity: isActive ? 1 : 0,
+              zIndex: isActive ? 2 : 0,
+              transform: "translateZ(0)",
+              transition: reduced ? "none" : "opacity 1000ms ease-in-out",
+            }}
+          >
+            <img
+              src={img}
+              alt={isActive ? "Portrait of the LitcraftIQ engineer" : ""}
+              draggable="false"
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };

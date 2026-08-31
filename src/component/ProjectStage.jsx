@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useActiveProject } from "../context/ActiveProjectContext";
 import { PROJECTS, wrapProjectIndex } from "../data/projects";
 import { PROJECT_DURATION, SCENE_EASE } from "../lib/motion";
-import { useDocumentHidden } from "../hooks/useMotion";
+import { useDocumentHidden, useFinePointerHover } from "../hooks/useMotion";
 import ProjectCard from "./ProjectCard";
 import ProjectControls from "./ProjectControls";
 
@@ -37,12 +37,14 @@ const ProjectStage = ({ compact = false }) => {
   const { index, setIndex, project, count } = useActiveProject();
   const reduced = useReducedMotion();
   const hidden = useDocumentHidden();
+  const hoverPauseEnabled = useFinePointerHover();
   const stageRef = useRef(null);
   const pointerIdRef = useRef(null);
   const dragStartX = useRef(0);
   const dragStartY = useRef(0);
   const dragPending = useRef(false);
   const wheelLock = useRef(false);
+  const pointerInput = useRef(false);
   const [dragging, setDragging] = useState(false);
   const [hovering, setHovering] = useState(false);
   const [focused, setFocused] = useState(false);
@@ -64,7 +66,12 @@ const ProjectStage = ({ compact = false }) => {
     [setIndex]
   );
 
-  const paused = hovering || focused || dragging || hidden || reduced;
+  const paused =
+    (hoverPauseEnabled && hovering) || focused || dragging || hidden || reduced;
+
+  useEffect(() => {
+    if (!hoverPauseEnabled) setHovering(false);
+  }, [hoverPauseEnabled]);
 
   useEffect(() => {
     if (paused) return undefined;
@@ -79,6 +86,8 @@ const ProjectStage = ({ compact = false }) => {
   }, [index]);
 
   const onPointerDown = (event) => {
+    pointerInput.current = true;
+    setFocused(false);
     if (event.target.closest("a, button")) return;
     if (event.pointerType === "mouse" && event.button !== 0) return;
     pointerIdRef.current = event.pointerId;
@@ -142,6 +151,9 @@ const ProjectStage = ({ compact = false }) => {
   }, [go, reduced]);
 
   const onKeyDown = (event) => {
+    if (event.key === "Tab" || event.key.startsWith("Arrow") || event.key === "Home" || event.key === "End") {
+      pointerInput.current = false;
+    }
     if (event.key === "ArrowRight") {
       event.preventDefault();
       go(1);
@@ -174,18 +186,26 @@ const ProjectStage = ({ compact = false }) => {
     <section
       ref={stageRef}
       tabIndex={0}
-      onFocus={() => setFocused(true)}
+      onFocus={(event) => {
+        if (pointerInput.current) return;
+        if (event.target.matches?.(":focus-visible")) {
+          setFocused(true);
+        }
+      }}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) {
           setFocused(false);
         }
       }}
-      onMouseEnter={() => setHovering(true)}
+      onMouseEnter={() => {
+        if (hoverPauseEnabled) setHovering(true);
+      }}
       onMouseLeave={() => setHovering(false)}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
       onPointerCancel={endDrag}
+      onLostPointerCapture={endDrag}
       onKeyDown={onKeyDown}
       aria-roledescription="carousel"
       aria-label="Featured projects"

@@ -227,6 +227,9 @@ textarea {
 }
 
 .about-portrait {
+  isolation: isolate;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-mask-image: radial-gradient(
     ellipse 82% 88% at 50% 46%,
     #000 38%,

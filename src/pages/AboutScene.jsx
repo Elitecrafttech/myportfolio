@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FcIdea } from "react-icons/fc";
 import { TbMoodNerd, TbWorldHeart } from "react-icons/tb";
@@ -19,6 +19,7 @@ const STATS = [
 
 const AboutScene = () => {
   useDocumentTitle(`About · ${BRAND.name}`);
+  const portraits = useMemo(() => [pics, myimg2, myimg1], []);
 
   return (
     <section className="scene-scroll" aria-labelledby="about-title">
@@ -73,7 +74,7 @@ const AboutScene = () => {
           </div>
 
           <div className="order-1 mx-auto w-full max-w-md md:order-2">
-            <ImageSwitcher images={[pics, myimg2, myimg1]} />
+            <ImageSwitcher images={portraits} />
           </div>
         </div>
 
